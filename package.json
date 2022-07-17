@@ -4,7 +4,7 @@
   "homepage": "https://AnilHash.github.io/our_voyage",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "start": "npm run dev",
     "build": "tsc && vite build",
