@@ -5,4 +5,7 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 export default defineConfig({
   base: "/Our_Voyage/",
   plugins: [reactRefresh()],
+  build: {
+    outDir: "./build",
+  },
 });
