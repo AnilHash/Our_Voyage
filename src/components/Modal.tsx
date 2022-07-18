@@ -86,7 +86,9 @@ const Modal = () => {
       <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">New Blog</h5>
+            <h5 className="modal-title">
+              {selectedBlog ? "Update Blog" : "New Blog"}
+            </h5>
             <button
               type="button"
               className="btn-close"
