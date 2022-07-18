@@ -92,7 +92,10 @@ const Modal = () => {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              onClick={toggleModal}
+              onClick={() => {
+                toggleModal();
+                setEditBlogId(undefined);
+              }}
             ></button>
           </div>
           <form onSubmit={(e) => handleSubmit(e)}>
